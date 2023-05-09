@@ -18,23 +18,35 @@
 
   </head>
   <body>
+    <img
+    class="img-fluid" id ="img"
+    src="/static/career.jpg"
+    >
+    <div>
+      {% include "nav.html" %}
+    </div>
     <div class="container">
       <h1 class = "text-center mt-3 mb-3">{{company_name}} Careers</h1>
-      <img
-      class="img-fluid" id ="img"
-      src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyZWVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-      >
+      
+      <div class="row">
+        <div class="col-md-6">
+          <p class="lead">
+            Laborum consectetur laborum deserunt ut fugiat velit incididunt pariatur
+            duis enim ipsum anim reprehenderit duis. Est qui non tempor consectetur
+            in. Consequat dolore id excepteur tempor est. Et pariatur eiusmod aliqua
+            sunt ut excepteur incididunt ut cillum dolore aute. Consectetur qui ad
+            non magna minim sint Lorem officia qui reprehenderit cupidatat
+            exercitation. Ad labore commodo ullamco ad mollit consectetur amet nisi
+            ad exercitation.
+          </p>
+        </div>
 
-      <h2 class = "text-center mt-3 mb-3">About Jovian</h2>
-      <p class="body">
-        Laborum consectetur laborum deserunt ut fugiat velit incididunt pariatur
-        duis enim ipsum anim reprehenderit duis. Est qui non tempor consectetur
-        in. Consequat dolore id excepteur tempor est. Et pariatur eiusmod aliqua
-        sunt ut excepteur incididunt ut cillum dolore aute. Consectetur qui ad
-        non magna minim sint Lorem officia qui reprehenderit cupidatat
-        exercitation. Ad labore commodo ullamco ad mollit consectetur amet nisi
-        ad exercitation.
-      </p>
+      <div class="d-none d-md-block col-md-6">
+      <img
+      src="/static/people.jpg" style="height:320px; border-radius:5px;">
+      </div>
+
+      </div>
 
       <h2 class = "text-center mt-3 mb-3">Job Openings</h2>
       <div >
@@ -42,7 +54,7 @@
           {%include "jobs.html" %}
         {% endfor %}
             </div>
-      <h2 class = "text-center mt-3 mb-3">What Our Happy Users are saying</h2>
+      <h2 class = "text-center mt-5 mb-3">What Our Happy Users are saying</h2>
       <p class="body">
         Lorem ipsum dolor sit amet, consectCupidatat ea nostrud cupidatat ea
         consequat cupidatat excepteur amet aliquip nulla mollit. Officia dolor
@@ -51,12 +63,13 @@
         cupidatat.
       </p>
       <div class = "text-center">
-        <button class="btn btn-dark mt-3" type="button" >Contact Us</button>
+        <a class="btn btn-dark mt-3" type="button" href="mailto:saaduumar42@gmail.com?subject=What's your question?" >Contact Us</a>
 
     </div>
     <div class = "text-center mt-4">
     <small>
       Copyright 2023, Humarr
+      {% include "footer.html" %}
     </small>
     </div>
     </div>
